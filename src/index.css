@@ -1,0 +1,246 @@
+ :root {
+    padding: 20px;
+    font-family: Inter, system-ui, Avenir, Helvetica, Arial, sans-serif;
+    line-height: 1.5;
+    font-weight: 400;
+    font-synthesis: none;
+    text-rendering: optimizeLegibility;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    -webkit-text-size-adjust: 100%;
+    background-image: url(https://cdn.pixabay.com/animation/2023/11/11/05/12/05-12-36-779_512.gif);
+    background-repeat: no-repeat;
+    background-size:contain;
+  
+}
+
+body {
+    font-family: 'Roboto', sans-serif; 
+    line-height: 1.6;
+    color: var(--text);
+    background: var(--primary-bg);
+    margin: 0;
+    min-width: 320px;
+    min-height: 100vh;
+}
+
+a {
+    font-weight: 500;
+    color: var(--primary-color);
+    text-decoration: none;
+}
+
+a:hover {
+    color: #35bda9; 
+}
+
+h1 {
+    font-size: 2.5em;
+    line-height: 1.2;
+}
+
+button {
+    border-radius: 8px;
+    border: none;
+    padding: 0.6em 1.2em;
+    font-size: 1em;
+    font-weight: 500;
+    background-color: var(--button-bg);
+    color: #f28585;
+    cursor: pointer;
+    transition: background-color 0.3s, box-shadow 0.3s;
+    box-shadow: 0 4px 6px #f28585;
+    display: inline;
+}
+
+button:hover {
+    background-color: var(--button-hover-bg);
+    box-shadow: 0 6px 8px rgba(231, 219, 219, 0.15);
+}
+
+nav {
+    height: 80px;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    background-color: var(--secondary-bg);
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+table {
+    margin: auto;
+    width: 80%;
+    text-align: center;
+    border-collapse: collapse;
+    background-color: #f7d2d2;
+    border-radius: 10px;
+    overflow: hidden; 
+}
+
+th, td {
+    padding: 0.8em;
+    border-bottom: 1px solid #ddd;
+}
+
+tr:nth-child(odd) {
+    background-color: #f9f9f9;
+}
+
+tr:nth-child(even) {
+    background-color: #fff;
+}
+
+tr:hover {
+    background-color: #f1f1f1;
+}
+
+.show-page, .Edit-page, .New-page, .SongForm {
+    text-align: center;
+    border: 1px solid #ddd;
+    background-color: transparent;
+    padding: 20px;
+    border-radius: 10px;
+    width: 600px;
+    margin: auto;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.Index {
+    padding: 20px;
+}
+
+.Index h2 {
+    margin-bottom: 20px;
+}
+.showNavigation {
+    width: 40%;
+    margin: auto;
+    display: flex;
+    justify-content: space-between;
+  }
+  .Song{
+    text-align: center;
+    border: 1px solid #ddd;
+    background-color: transparent;
+    padding: 20px;
+    border-radius: 10px;
+    width: 600px;
+    margin: auto;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+} 
+ .song-actions{
+    margin-left: 30%;
+ }  
+  
+
+form {
+    background-color: transparent;
+    padding: 20px;
+    margin: 20px 0;
+    border-radius: 5px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+form label {
+    display: block;
+    margin-bottom: 5px;
+    font-weight: bold;
+}
+
+form input, form textarea, form select {
+    width: 100%;
+    padding: 10px;
+    border-radius: 4px;
+    border: 1px solid #ccc;
+    font-size: 1em;
+}
+
+
+form button:hover {
+    background-color: #35bda9;
+}
+
+/* Tables */
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin: 20px 0;
+}
+
+th, td {
+    padding: 10px;
+    border: 1px solid #ddd;
+    text-align: left;
+}
+
+th {
+    background-color: #35bda9;
+    color: white;
+}
+
+td a {
+    color: #35bda9;
+}
+
+td a:hover {
+    color: #35bda9;
+}
+
+/* Cards */
+.card {
+    background-color: white;
+    padding: 15px;
+    margin: 15px 0;
+    border-radius: 5px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.card h3 {
+    margin: 0 0 10px;
+}
+
+.card p {
+    margin: 5px 0;
+}
+
+.card-actions button {
+    background-color: #ffc107;
+    border: none;
+    padding: 5px 10px;
+    color: #333;
+    cursor: pointer;
+    border-radius: 4px;
+    margin-right: 5px;
+    transition: background-color 0.3s ease;
+}
+
+.card-actions button:hover {
+    background-color: #e0a800;
+}
+
+.card-actions button:last-child {
+    background-color: #dc3545;
+    color: white;
+}
+
+.card-actions button:last-child:hover {
+    background-color: #c82333;
+}
+
+/* Favorite Icon */
+.favorite {
+    cursor: pointer;
+    color: #ffc107;
+    transition: color 0.3s ease;
+}
+
+.favorite:hover {
+    color: #e0a800;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+    nav, form, table, .card {
+        margin: 10px;
+    }
+}
